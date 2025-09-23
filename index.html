@@ -3,15 +3,436 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Simples</title>
+  <title>LegisTech Studio — Inovação para escritórios jurídicos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Olá, este é meu site simples 🚀</h1>
-  <p>Clique no botão para ver a interação com JavaScript.</p>
+  <header class="topbar" id="topo">
+    <div class="container">
+      <a href="#topo" class="brand" aria-label="Página inicial LegisTech Studio">
+        <span class="brand__logo">LT</span>
+        <span class="brand__name">LegisTech Studio</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#cases">Resultados</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato" class="btn btn--ghost">Fale com especialistas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <button id="botao">Clique aqui</button>
-  <p id="mensagem"></p>
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Plataforma Digital para o Direito do Futuro</p>
+          <h1 id="hero-heading">Transforme a operação jurídica com tecnologia sob medida</h1>
+          <p class="hero__lead">
+            Aplicativos, automações e dashboards desenhados para acelerar escritórios e departamentos jurídicos.
+            Combinamos design centrado em pessoas e tecnologia confiável para entregar experiências que encantam
+            clientes e equipes.
+          </p>
+          <div class="hero__actions">
+            <a href="#contato" class="btn">Agendar diagnóstico gratuito</a>
+            <a href="#servicos" class="btn btn--ghost">Explorar soluções</a>
+          </div>
+          <dl class="hero__stats">
+            <div>
+              <dt>95%</dt>
+              <dd>dos clientes relatam aumento de produtividade em até 6 meses</dd>
+            </div>
+            <div>
+              <dt>+120</dt>
+              <dd>integrações entregues com sistemas jurídicos e ERPs</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="hero__card" aria-label="Destaque de produto">
+          <h2>Sala de Controle Jurídico</h2>
+          <p>
+            Centralize prazos, fluxos e indicadores críticos em uma única tela interativa. Alertas inteligentes
+            ajudam a prevenir riscos e garantir conformidade.
+          </p>
+          <ul class="hero__highlights">
+            <li>Automação de tarefas repetitivas com IA generativa</li>
+            <li>Fluxos customizados para contencioso, consultivo e compliance</li>
+            <li>Biblioteca de modelos com versionamento e assinatura digital</li>
+          </ul>
+          <a href="#cases" class="hero__link">Conheça os resultados</a>
+        </aside>
+      </div>
+      <div class="hero__background" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="servicos" aria-labelledby="servicos-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">O que fazemos</p>
+          <h2 id="servicos-heading">Serviços completos para transformar sua operação jurídica</h2>
+          <p class="section__description">
+            Projetamos soluções digitais ponta a ponta: da descoberta à sustentação. Nosso processo garante entregas
+            rápidas, seguras e aderentes às necessidades do seu time.
+          </p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Experiência do usuário</h3>
+            <p>Workshops colaborativos, jornadas e protótipos navegáveis que colocam clientes e advogados no centro.</p>
+            <ul>
+              <li>Mapeamento de processos críticos</li>
+              <li>Design system jurídico pronto para escalar</li>
+              <li>Testes de usabilidade com usuários reais</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Desenvolvimento de plataformas</h3>
+            <p>Aplicações web modernas, responsivas e integradas aos sistemas já adotados pelo seu escritório.</p>
+            <ul>
+              <li>Integrações com ProJudi, e-SAJ, PJe, CPJ e ERPs</li>
+              <li>Arquitetura em nuvem com segurança reforçada</li>
+              <li>Squad dedicado com entregas quinzenais</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Automação inteligente</h3>
+            <p>Robôs e fluxos orquestrados para eliminar tarefas repetitivas e acelerar análises complexas.</p>
+            <ul>
+              <li>Captura automática de publicações e prazos</li>
+              <li>Robôs para due diligence e contratos</li>
+              <li>Análises com modelos de IA treinados com seus dados</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="solucoes" aria-labelledby="solucoes-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Soluções verticais</p>
+          <h2 id="solucoes-heading">Produtos que aceleram os cenários mais desafiadores</h2>
+        </div>
+        <div class="solutions-grid">
+          <article class="solution">
+            <h3>Portal do cliente corporativo</h3>
+            <p>Visualize pipeline de demandas, SLA de entregas e relatórios personalizados em tempo real.</p>
+            <dl>
+              <div>
+                <dt>Tempo de implementação</dt>
+                <dd>8 semanas</dd>
+              </div>
+              <div>
+                <dt>Integrações</dt>
+                <dd>Salesforce, TOTVS, SAP</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="solution">
+            <h3>Gestão de contencioso em larga escala</h3>
+            <p>Automação de distribuição, intimações e consolidação de indicadores para alto volume de processos.</p>
+            <dl>
+              <div>
+                <dt>Tempo de implementação</dt>
+                <dd>12 semanas</dd>
+              </div>
+              <div>
+                <dt>Integrações</dt>
+                <dd>ProJudi, e-SAJ, CPJ-3C</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="solution">
+            <h3>Compliance &amp; investigações</h3>
+            <p>Fluxos sigilosos com rastreabilidade completa, gestão de evidências e relatórios de auditoria.</p>
+            <dl>
+              <div>
+                <dt>Tempo de implementação</dt>
+                <dd>6 semanas</dd>
+              </div>
+              <div>
+                <dt>Integrações</dt>
+                <dd>Microsoft 365, Google Workspace</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases" aria-labelledby="cases-heading">
+      <div class="container">
+        <div class="section__header section__header--inline">
+          <div>
+            <p class="section__eyebrow">Histórias de impacto</p>
+            <h2 id="cases-heading">Resultados comprovados em escritórios de referência</h2>
+          </div>
+          <a class="btn btn--ghost" href="#contato">Quero transformar meu time</a>
+        </div>
+        <div class="results-grid">
+          <article class="result" aria-label="Case escritório empresarial">
+            <header>
+              <p class="result__category">Escritório empresarial</p>
+              <p class="result__title">+32% de produtividade no contencioso estratégico</p>
+            </header>
+            <p>
+              Implementamos esteiras automatizadas para triagem de publicações, classificação com IA e direcionamento
+              automático de tarefas. O dashboard de indicadores reduziu em 48% o tempo de reporte para sócios.
+            </p>
+          </article>
+          <article class="result" aria-label="Case departamento jurídico">
+            <header>
+              <p class="result__category">Departamento jurídico</p>
+              <p class="result__title">Tempo de onboarding de novos contratos caiu para 3 dias</p>
+            </header>
+            <p>
+              Construímos um portal para integração entre jurídico, compras e compliance com assinatura digital
+              integrada. O fluxo de aprovação ganhou rastreabilidade total com alertas automáticos.
+            </p>
+          </article>
+          <article class="result" aria-label="Case boutique de compliance">
+            <header>
+              <p class="result__category">Boutique de compliance</p>
+              <p class="result__title">Redução de 65% no esforço de auditorias</p>
+            </header>
+            <p>
+              Criamos um cofre digital de evidências com workflows para investigações. Inteligência artificial
+              identifica padrões suspeitos e gera relatórios técnicos em poucos cliques.
+            </p>
+          </article>
+        </div>
+        <div class="metrics" aria-label="Indicadores do LegisTech Studio">
+          <article>
+            <p class="metric__value" data-target="180">0</p>
+            <p class="metric__label">projetos entregues</p>
+          </article>
+          <article>
+            <p class="metric__value" data-target="28">0</p>
+            <p class="metric__label">times jurídicos atendidos em 2023</p>
+          </article>
+          <article>
+            <p class="metric__value" data-target="4.9">0</p>
+            <p class="metric__label">nota média de satisfação</p>
+          </article>
+          <article>
+            <p class="metric__value" data-target="35">0</p>
+            <p class="metric__label">especialistas multidisciplinares</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="sobre" aria-labelledby="sobre-heading">
+      <div class="container about">
+        <div class="about__content">
+          <p class="section__eyebrow">Quem somos</p>
+          <h2 id="sobre-heading">Tecnologia, design e direito falando a mesma língua</h2>
+          <p>
+            Somos uma consultoria digital fundada por especialistas que viveram os bastidores de escritórios e
+            departamentos jurídicos. Entendemos os desafios reais da rotina jurídica e aplicamos tecnologia para gerar
+            ganhos concretos.
+          </p>
+          <ul class="about__list">
+            <li>Time multidisciplinar com product designers, engenheiros e advogados</li>
+            <li>Processo colaborativo com rituais quinzenais e indicadores transparentes</li>
+            <li>Implantações orientadas à segurança da informação e LGPD</li>
+          </ul>
+          <div class="about__cta">
+            <a href="#contato" class="btn">Montar squad sob demanda</a>
+            <a href="#blog" class="btn btn--link">Conhecer nossa cultura</a>
+          </div>
+        </div>
+        <div class="about__panel" aria-label="Manifesto do LegisTech Studio">
+          <h3>Manifesto LegisTech</h3>
+          <p>
+            Acreditamos que o jurídico pode ser protagonista da inovação. Por isso combinamos tecnologia humanizada,
+            dados confiáveis e uma visão estratégica para criar experiências que liberam pessoas para o trabalho
+            criativo e decisório.
+          </p>
+          <ul>
+            <li>Visão orientada a dados desde a concepção</li>
+            <li>Escalabilidade como padrão em cada entrega</li>
+            <li>Governança e compliance incorporados ao produto</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="processo-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow">Como entregamos valor</p>
+          <h2 id="processo-heading">Um framework colaborativo para reduzir riscos e acelerar resultados</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <h3>Descoberta imersiva</h3>
+            <p>Dinâmicas com áreas-chave para mapear dores, objetivos e métricas de sucesso do projeto.</p>
+          </li>
+          <li>
+            <h3>Desenho da solução</h3>
+            <p>Protótipos validados com usuários, arquitetura alinhada à TI e planejamento de integrações.</p>
+          </li>
+          <li>
+            <h3>Construção incremental</h3>
+            <p>Sprints quinzenais, priorização baseada em dados e canal aberto com stakeholders.</p>
+          </li>
+          <li>
+            <h3>Escala e evolução contínua</h3>
+            <p>Monitoramento, análise de uso e roadmap vivo para garantir longevidade da solução.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="blog" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="section__header section__header--inline">
+          <div>
+            <p class="section__eyebrow">Conteúdo estratégico</p>
+            <h2 id="blog-heading">Insights para guiar a inovação jurídica</h2>
+          </div>
+          <a class="btn btn--link" href="#contato">Inscreva-se na newsletter</a>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <p class="blog-card__tag">Automação</p>
+            <h3>Guia prático para montar um squad jurídico digital</h3>
+            <p>
+              Estruture times ágeis, defina métricas e utilize tecnologia para gerar impacto rápido no jurídico.
+            </p>
+            <a href="#contato" class="blog-card__link">Quero receber o material</a>
+          </article>
+          <article class="blog-card">
+            <p class="blog-card__tag">Dados</p>
+            <h3>Como criar um pipeline de indicadores jurídicos confiável</h3>
+            <p>
+              Boas práticas para coletar, tratar e visualizar dados críticos para escritórios e departamentos.
+            </p>
+            <a href="#contato" class="blog-card__link">Solicitar acesso</a>
+          </article>
+          <article class="blog-card">
+            <p class="blog-card__tag">Cultura</p>
+            <h3>5 rituais que aproximam tecnologia e advocacia</h3>
+            <p>
+              Experiências reais de squads jurídicos que uniram times multidisciplinares em torno do cliente.
+            </p>
+            <a href="#contato" class="blog-card__link">Ver agenda de eventos</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato" aria-labelledby="contato-heading">
+      <div class="container contact">
+        <div class="contact__content">
+          <p class="section__eyebrow">Vamos conversar?</p>
+          <h2 id="contato-heading">Desenhamos o próximo passo da transformação digital jurídica</h2>
+          <p>
+            Envie seus dados e um especialista entrará em contato para montar um diagnóstico personalizado sem custo.
+          </p>
+          <div class="contact__details">
+            <p><strong>E-mail:</strong> contato@legistech.studio</p>
+            <p><strong>Telefone:</strong> +55 (11) 4000-2040</p>
+            <p><strong>Atendimento:</strong> Segunda a sexta, das 9h às 18h</p>
+          </div>
+        </div>
+        <form class="contact__form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Digite seu nome">
+            <span class="form-error" id="erro-nome"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail corporativo</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="nome@empresa.com">
+            <span class="form-error" id="erro-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" required placeholder="Escritório ou departamento">
+            <span class="form-error" id="erro-empresa"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Como podemos ajudar?</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Conte sobre o desafio atual"></textarea>
+            <span class="form-error" id="erro-mensagem"></span>
+          </div>
+          <button type="submit" class="btn btn--full">Enviar mensagem</button>
+          <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#topo" class="brand brand--footer">
+          <span class="brand__logo">LT</span>
+          <span class="brand__name">LegisTech Studio</span>
+        </a>
+        <p class="footer__description">
+          Construímos produtos digitais que colocam o jurídico no centro da estratégia empresarial.
+        </p>
+      </div>
+      <div class="footer__links">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#cases">Resultados</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Eventos</a></li>
+          <li><a href="#contato">Material educativo</a></li>
+          <li><a href="#contato">Suporte</a></li>
+        </ul>
+      </div>
+      <div class="footer__cta">
+        <h3>Receba novidades</h3>
+        <p>Insights mensais sobre transformação digital jurídica.</p>
+        <form class="footer__form" id="newsletter-form" novalidate>
+          <label class="sr-only" for="newsletter-email">E-mail</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Seu e-mail" required>
+          <button type="submit" class="btn">Assinar</button>
+        </form>
+        <p class="form-success" id="newsletter-success" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="ano-atual"></span> LegisTech Studio. Todos os direitos reservados.</p>
+      <div class="footer__social" aria-label="Redes sociais">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <div class="sr-only" aria-live="polite" aria-atomic="true" id="announcement"></div>
 
   <script src="script.js"></script>
 </body>
